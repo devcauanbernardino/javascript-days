@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Data e hora (Date)
+
+        let agora = new Date()
+        console.log(agora)
+
+        let dataEspecifica = new Date(2025, 10, 4, 10, 35, 0)
+        console.log(dataEspecifica)
+
+        let dataString = new Date('2025/10/4 10:35:')
+        console.log(dataString)
+
+        //---------------------------------------------------
+
+
+        //Métodos Date
+        let data = new Date()
+
+        //O dia do Mês
+        // data.setDate(9)
+        console.log(data.getDate())
+
+        //O dia da semana (0-6) onde 0 é Domingo
+        console.log(data.getDay())
+
+        //O mês (0-11) onde 0 é Janeiro
+        data.setMonth(3)
+        console.log(data.getMonth())
+
+        //O ano
+        data.setFullYear(2016)
+        console.log(data.getFullYear())
+
+        
+        //---------------------------------------------------
+
+        //Data e Hora (Date) Idioma
+        //DD-MM-AAAA
+        let date
+        date = Intl.DateTimeFormat('pt-br').format(date)
+        console.log(date)
+
+    </script>
+</body>
+</html>
