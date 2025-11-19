@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Arrays (Metodos)
+
+        let cart = ['Agua',' Arroz', 'Carne', 'Feijão']
+        let numbers = [10, 20, 33, 40, 5, 13, true]
+
+        cart.push('Suco') // Adicionar o item ao final da lista
+        cart.pop() // Remove o último item da lista
+        cart.shift() // Remove o primeiro item da lista
+        cart.unshift('Suco') // Adicionar o item no início da lista
+        cart.sort()// Organiza a lista em ordem alfabética
+
+        console.log(cart)
+
+        //-----------------------------------------------------------------
+
+        let y
+
+        y = cart.includes('Agua')//Retorna true pq existe agua no array
+        //Verifica se existe um valor dentro do array, retornando true ou false
+
+        y = cart.indexOf('Feijão')//Retorna o índice do valor 
+        y = cart.slice(1, 3)// Extrai uma parte do array, no caso do 1 ao 3. NÃO retorna o último valor
+        y = cart.splice(1, 3)// O mesmo de slice, porém, SIM retorna o último
+
+        //-----------------------------------------------------------------
+        // CHAIN
+         y = cart.slice(1, 3).sort().toString().includes('Carne')
+
+        //-----------------------------------------------------------------
+
+        //Arrays (Nesting)
+        let cartNumbers = [cart, numbers]
+
+        console.log(cartNumbers)
+        let z
+        z = cartNumbers[0][1]
+        z = cartNumbers[1][3]
+
+
+        // let z
+        // cart.push(numbers)
+        // console.log(cart)
+
+        // z = cart2[4][1]
+        // console.log(z)
+
+        
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
